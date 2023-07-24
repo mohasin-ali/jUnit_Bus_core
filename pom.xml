@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+ https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jUnit_Bus_core</groupId>
+  <artifactId>jUnit_Bus_core</artifactId>
+  <version>1.0</version>
+  <name>junitGit_Bus_coreAPI</name>
+  <packaging>jar</packaging>
+  
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <plugin.name>/Users/mohasin-2851/Projects/Workspace/</plugin.name>
+   </properties>
+  
+  <build>
+      <plugins>
+         <plugin>
+         <artifactId>maven-invoker-plugin</artifactId>
+         <version>1.6</version>
+         <configuration>
+            <debug>true</debug>
+            <pomIncludes>
+               <pomInclude>${plugin.name}junit/pom.xml</pomInclude>
+               <pomInclude>${plugin.name}junit-app-web-ui/pom.xml</pomInclude>
+            </pomIncludes>
+         </configuration>
+         <executions>
+            <execution>
+               <id>build</id>
+               <goals>
+                  <goal>run</goal>
+               </goals>
+            </execution>
+         </executions>
+         </plugin>
+      </plugins>
+   </build>
+   <dependencies>
+	   <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+		<!--<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>log4j-over-slf4j</artifactId>
+		    <version>2.0.7</version>
+		</dependency>-->
+		<!--<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-jdk14</artifactId>
+    <version>2.0.7</version>
+    <scope>test</scope>
+</dependency>
+
+		 <dependency>
+			 <groupId>org.slf4j</groupId> 
+			 <artifactId>slf4j-log4j12</artifactId> 
+			 <version>2.0.7</version>
+			 </dependency> 
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>2.0.7</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-simple</artifactId>
+		    <version>2.0.7</version>
+		    <scope>test</scope>
+		</dependency>
+		-->
+		<!--<dependency>
+<groupId>log4j</groupId>
+<artifactId>log4j</artifactId>
+<version>1.2.17</version>
+</dependency>-->
+
+	<!--	<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-simple</artifactId>
+  <version>1.7.25</version>
+  <scope>test</scope>
+</dependency>-->
+ 
+<!--<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-api</artifactId>
+  <version>1.7.25</version>
+</dependency>
+-->
+	<dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-engine</artifactId>
+	    <version>5.9.2</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>io.opentracing</groupId>
+	    <artifactId>opentracing-api</artifactId>
+	    <version>0.33.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.opentracing</groupId>
+	    <artifactId>opentracing-util</artifactId>
+	    <version>0.21.0</version>
+	</dependency>
+	</dependencies>
+   
+</project>
