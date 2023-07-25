@@ -5,6 +5,7 @@ public class MainProgram {
 	 // private static Logger logger = LoggerFactory.getLogger(MainProgram.class);	
 	public static void main(String[] args) {
 		System.out.println("Hello world! mohasin");
+		System.out.println("Integration successful");
 		/*
 		 * logger.debug("My Debug Log"); logger.info("My Info Log");
 		 * logger.warn("My Warn Log"); logger.error("My error log");
