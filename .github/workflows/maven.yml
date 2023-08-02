@@ -36,6 +36,12 @@ jobs:
           ls -la ./mohsin
           wget -O ./mohsin/dd-java-agent.jar https://dtdg.co/latest-java-tracer
           ls -la ./mohsin/*
+          echo "Executing the mave commands"
+          DD_CIVISIBILITY_ENABLED=true \
+          DD_CIVISIBILITY_AGENTLESS_ENABLED=true 
+          DD_API_KEY=2b7aa28a91b25c435e2f9dddeee8b215 \
+          DD_ENV=local DD_SERVICE=mohasin-java-app \
+          MAVEN_OPTS=-javaagent:./mohsin/dd-java-agent.jar \
           mvn -B clean verify --file pom.xml
           
 
