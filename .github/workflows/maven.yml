@@ -35,7 +35,7 @@ jobs:
           pwd
           ls -la ./mohsin
           wget -O ./mohsin/dd-java-agent.jar https://dtdg.co/latest-java-tracer
-          ls -la ./mohasin/*
+          ls -la ./mohsin/*
           mvn -B clean verify --file pom.xml
           
 
