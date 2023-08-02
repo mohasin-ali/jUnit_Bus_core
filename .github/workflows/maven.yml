@@ -22,6 +22,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: datadog/agent-github-action@v1.3
+      with:
+            api_key: 2b7aa28a91b25c435e2f9dddeee8b215
     - name: Set up JDK 8
       uses: actions/setup-java@v3
       with:
