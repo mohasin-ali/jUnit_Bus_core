@@ -28,7 +28,16 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B clean verify --file pom.xml
+      run: 
+          |
+          ls -la
+          mkdir mohsin
+          pwd
+          ls -la ./mohsin
+          wget -O ./mohsin/dd-java-agent.jar https://dtdg.co/latest-java-tracer
+          ls -la ./mohasin/*
+          mvn -B clean verify --file pom.xml
+          
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
