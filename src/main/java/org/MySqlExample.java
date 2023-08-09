@@ -8,7 +8,6 @@ import java.sql.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 public class MySqlExample
 {
 	  private static final Logger logger = LoggerFactory.getLogger(MySqlExample.class);
@@ -40,10 +39,9 @@ public class MySqlExample
 	            		 String lastName =  rs.getString("LastName");
 	            		  logger.info("last name "+lastName);
 	            	 }
-	            	 if(i%5==0) {
-	            		 //mysqlRest(1l);
-	            		RegexPerfTest.main(null);
-	            	 }
+						/*
+						 * if(i%5==0) { //mysqlRest(1l); RegexPerfTest.main(null); }
+						 */
 	            	 rs.close();
 	            }
 		}
